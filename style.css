@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
-    padding: 2px;
-    background-color: whitesmoke;
+    background:none;
 }
 
 a {text-decoration: none; color: #22619c;}
@@ -9,37 +8,29 @@ a:hover {text-decoration: underline; color: darkturquoise;}
 body {
     color: #26619c;
     background-color: ghostwhite;
+    background: ghostwhite;
     margin: 0;
 }
-h1{
-    font-size: 36px;
-}
-h2{
-    color: #22619c;
-}
-h3 {
-    margin-left: 32px;
-}
-p {
-    color:darkcyan;
-    margin-left: 50px;
-}
-li {
-    text-align: center;
-}
+h1{font-size: 36px;}
+h2{color: #22619c;}
+h3 {margin-left: 32px;}
+p {color:darkcyan; margin-left: 50px;}
+li {text-align: center;}
+footer {text-align: center;}
+
 #tab {
     text-align: center;
     padding: 8px;
     background-color: floralwhite;
 }
 #home {
-    background-color: beige;
+    background-color: floralwhite;
 }
 #about {
     background-color: floralwhite;
 }
 #contact{
-    background-color: white;
+    background-color: floralwhite;
     height: auto;
     padding: 20px;
     text-align: center;
