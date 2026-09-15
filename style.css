@@ -15,6 +15,7 @@ h1{font-size: 36px;}
 h2{color: #22619c;}
 h3 {margin-left: 32px;}
 p {color:darkcyan; margin-left: 50px;}
+ul {text-align: center; list-style-position: inside; padding: 0;}
 li {text-align: center;}
 footer {text-align: center;}
 
