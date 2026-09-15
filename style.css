@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: whitesmoke;
+}
+#tab {
+    text-align: center;
+    padding: 8px;
+
+}
+body {
+    color: #26619c;
+    background-color: ghostwhite;
+    margin: 0;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    color: #22619c;
+}
+p {
+    color:darkcyan;
+    margin-left: 50px;
+}
+li {
+    text-align: center;
+}
+#tab {
+    background-color: cornsilk;
+}
+#home {
+    background-color: beige;
+}
+#about {
+    background-color: floralwhite;
+}
+#contact{
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
