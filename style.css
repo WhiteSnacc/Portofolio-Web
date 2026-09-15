@@ -3,11 +3,9 @@
     padding: 2px;
     background-color: whitesmoke;
 }
-#tab {
-    text-align: center;
-    padding: 8px;
 
-}
+a {text-decoration: none; color: #22619c;}
+a:hover {text-decoration: underline; color: darkturquoise;}
 body {
     color: #26619c;
     background-color: ghostwhite;
@@ -19,6 +17,9 @@ h1{
 h2{
     color: #22619c;
 }
+h3 {
+    margin-left: 32px;
+}
 p {
     color:darkcyan;
     margin-left: 50px;
@@ -27,7 +28,9 @@ li {
     text-align: center;
 }
 #tab {
-    background-color: cornsilk;
+    text-align: center;
+    padding: 8px;
+    background-color: floralwhite;
 }
 #home {
     background-color: beige;
@@ -40,4 +43,9 @@ li {
     height: auto;
     padding: 20px;
     text-align: center;
+}
+#projek {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
