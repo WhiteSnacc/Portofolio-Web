@@ -5,69 +5,122 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Saya</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <header>
-            <center><h1>PORTOFOLIO SAYA</h1></center>
-            <nav id="tab">
-                <a href="#home">Home</a>
-                <a href="portofolio.html">Portfolio</a>
-                <a href="project.html">Project</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <!-- Untuk Navigasi -->
+        <div class="container">
+            <div class="header">
+                <center><h1>PORTOFOLIO SAYA</h1></center>
+                <nav>
+                    <ul>
+                        <li><a href="portofolio.html">Home</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex">
+                <div class="content">
+                    <section id="home">
+                        <h3>Hi, nama saya Albima Rasya!</h3><br>
+                        <p>Per tanggal 15 September 2026 ini saya mahasiswa semester 3 dari prodi S1 Ilmu Komputer Universitas di Pulau Sumatera ^.^</p>
+                        <div>
+                            <img src="assets/pp.webp" alt="Foto saya" width="300px">
+                            <p>Saya berasal dari kota Medan, asal sekolah SMKN 1 Medan. Saya sangat tertarik di bidang AI dan Cybersecurity, <br>walau saya sendiri kurang berusaha di bidang tersebut (╥﹏╥)</p>
+                        </div>
+                    </section>
 
-        <main>
-            <section id="home">
-                <h3>Hi, nama saya Albima Rasya!</h3><br>
-                <p>Per tanggal 15 September 2026 ini saya mahasiswa semester 3 dari prodi S1 Ilmu Komputer Universitas di Pulau Sumatera ^.^</p>
-                <div>
-                    <img src="pp.webp" alt="Foto saya" width="300px">
-                    <p>Saya berasal dari kota Medan, asal sekolah SMKN 1 Medan. Saya sangat tertarik di bidang AI dan Cybersecurity, <br>walau saya sendiri kurang berusaha di bidang tersebut (╥﹏╥)</p>
+                    <section id="about">
+                        <h2>About</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequatur at harum eligendi quaerat quam! Esse soluta dolorum voluptas eum nesciunt suscipit ipsam accusamus cupiditate natus omnis perspiciatis quam, aut earum repudiandae consequuntur asperiores facilis pariatur dolorem eveniet. Voluptas ullam cupiditate commodi corporis veritatis architecto dicta quisquam, fuga, eligendi saepe assumenda pariatur deleniti quia laudantium nemo aspernatur hic dignissimos odio quas reprehenderit qui quibusdam sit! Maxime ducimus suscipit atque quod, magnam earum recusandae accusantium voluptatem? Praesentium quod reiciendis modi excepturi fugit reprehenderit, aut inventore porro hic ducimus maiores amet, odio voluptate explicabo sit pariatur nihil! Voluptate rerum suscipit nulla ducimus.</p>
+                    </section>
+
+                    <section id="contact">
+                        <h2>Message 4 Me</h2>
+                        <form>
+                            <label for="nama">Nama: </label>
+                            <input type="text" id="nama" placeholder="Masukkan nama anda.."><br>
+
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" placeholder="Masukkan email anda.."><br>
+
+                            <label for="pesan">Pesan: </label>
+                            <textarea id="pesan" placeholder="Masukkan pesan.."></textarea><br>
+
+                            <input type="radio" id="cowo">
+                            <label for="cowo">Laki-laki</label><br>
+                            <input type="radio" id="cewe">
+                            <label for="cewe">Perempuan</label><br>
+
+                            <input type="submit" value="Kirim">
+
+                        </form>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li><a href="https://instagram.com/real_rsyaa" target="_blank">Instagram: @real_rsyaa</a></li>
+                            <li><a href="https://github.com/WhiteSnacc" target="_blank">Github: WhiteSnacc</a></li>
+                            <li><a href="https://linkedin.com/in/albima-rasya" target="_blank">LinkedIn: Albima Rasya</a></li>
+                        </ul>
+                    </section>
                 </div>
-            </section>
 
-            <section id="about">
-                <h2>About</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequatur at harum eligendi quaerat quam! Esse soluta dolorum voluptas eum nesciunt suscipit ipsam accusamus cupiditate natus omnis perspiciatis quam, aut earum repudiandae consequuntur asperiores facilis pariatur dolorem eveniet. Voluptas ullam cupiditate commodi corporis veritatis architecto dicta quisquam, fuga, eligendi saepe assumenda pariatur deleniti quia laudantium nemo aspernatur hic dignissimos odio quas reprehenderit qui quibusdam sit! Maxime ducimus suscipit atque quod, magnam earum recusandae accusantium voluptatem? Praesentium quod reiciendis modi excepturi fugit reprehenderit, aut inventore porro hic ducimus maiores amet, odio voluptate explicabo sit pariatur nihil! Voluptate rerum suscipit nulla ducimus.</p>
-            </section>
-
-            <section id="contact">
-                <h2>Message 4 Me</h2>
-                <form>
-                    <label for="nama">Nama: </label>
-                    <input type="text" id="nama" placeholder="Masukkan nama anda.."><br>
-
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" placeholder="Masukkan email anda.."><br>
-
-                    <label for="pesan">Pesan: </label>
-                    <textarea id="pesan" placeholder="Masukkan pesan.."></textarea><br>
-
-                    <input type="radio" id="cowo">
-                    <label for="cowo">Laki-laki</label><br>
-                    <input type="radio" id="cewe">
-                    <label for="cewe">Perempuan</label><br>
-
-                    <input type="submit" value="Kirim">
-
-                </form>
-                <h2>Follow Me</h2>
-                <ul>
-                    <li>Instagram: @real.rsyaa</li>
-                    <li>Github: WhiteSnacc</li>
-                    <li>LinkedIn: Albima Rasya</li>
-                </ul>
-            </section>
-
-            <a href="https://youtube.com" target="_blank">Visit Youtube</a>
-
-            <hr>
-        </main>
-        <footer>
-            <p>&copy; 2026 Albima Rasya. All rights reserved.</p>
-        </footer>
+                <div id="right-side">
+                    <aside id="image" class="ad-banner" aria-label="Banner komunitas">
+                        <a target="_blank" class="ad-link" id="imglink" href="https://genosadness.neocities.org/" aria-label="Buka situs banner"></a>
+                        <div class="fixed">
+                            <a href="https://dogspit.nekoweb.org/sidelinkads.html" target="_blank" style="color:dimgray; text-decoration:none;white-space: pre;">SideLink</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; 2026 Albima Rasya. All rights reserved.</p>
+                <br>
+                <span id="daily-counter">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_1.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_2.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_3.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_4.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_5.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_6.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_7.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_8.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_9.gif">
+                    <img style="width: 60px; height: 125px" class="digit" src="https://widget.st/widget/o/hc/kicya_0.gif">
+                </span>
+                <br>
+                <span id="down-footer-bar">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow" style="width:150px; height:20px">
+                    <img src="assets/pinkie-pie-fan-blinkie.gif" alt="a `pinkie pie fan!`" style="width:150px; height:20px" class="freezable">
+                    <img src="assets/free-palestine-blinkie.gif" alt="a blinkie `free palestine`" style="width:150px; height:20px" class="freezable">
+                    <img src="assets/cd-lover-blinkie.gif" alt="a blinkie reading `cd lover`" style="width: 150px; height: 20px;" class="freezable">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" style="width:150px; height:20px">
+                </span>
+                <br>
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/e23.gif"> <!--rainbowcat-->
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/construction.png">
+                <img src="https://nekoweb.org/assets/buttons/button11.gif"> <!-- button by milkyway.moe -->
+                <img style="width: 250px; height: 120px" id="mainimg" src="https://file.garden/aFLa9SsHoBhT81zQ/story/1/1-1.gif" alt="linkedtale 250x120" onclick="turnpage()">
+                <a href="https://quack.nekoweb.org/" target="_blank" class="wholepage" id="imglink"></a>
+                <img src="assets/hatems.gif" alt="I hate Microsoft">
+                <img src="assets/graphicdesign.gif" alt="Graphic design is my passion">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/powered.gif">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/ibispaint.jpg">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/nop.gif">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/a7.gif">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/css.png">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/beyes.gif">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/noise00.gif">
+                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/tumblr_fd92abe5f8af0468d42a5e209607790f_a69d5cd4_100.gif">
+                <img src="assets/make-room-album-button.gif" alt="images of eyes" style="width: 88px; height: 31px;" title="images from the make room album cover!" class="freezable">
+                <img src="assets/free-palestine.gif" alt="free palestine gif" style="width:88px;height:31px">
+                <img src="assets/mobile-friendly.gif" alt="Mobile friendly (mostly)" style="width:88px;height:31px">
+                <img src="assets/america-ya-button.gif" alt="button of Osaka saying `america ya!` then many chiyos saying `hallo :D` over and over" class="freezable" style="width: 88px; height: 31px;" title="backgrounf from the panel `chio-chans's country`">
+                <br>
+                <img style="margin-right: 20%;" src="https://file.garden/aFLa9SsHoBhT81zQ/windograph/ezgif.com-animated-gif-maker%20(3).gif">
+                <img style="margin-left: 0%;" src="https://file.garden/aFLa9SsHoBhT81zQ/windograph/tumblr_d445cceca5b9d6ea4fac413b74df4ff3_a31b80fb_640.gif">
+            </div>
     </body>
 </html>

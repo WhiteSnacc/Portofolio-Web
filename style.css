@@ -2,36 +2,61 @@
     box-sizing: border-box;
     background:none;
 }
+body {
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: url("assets/background.png");
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+	margin: 0;
+	color: var(--text-primary);
+	font-size: 12px;
+	font-family: noto, Arial, Helvetica, sans-serif;
+}
+.container {
+    color: #22619c;
+    background: ghostwhite;
+    margin: 0 80px;
+    border: 2px solid #22619c;
+}
 
 a {text-decoration: none; color: #22619c;}
 a:hover {text-decoration: underline; color: darkturquoise;}
-body {
-    color: #26619c;
-    background-color: ghostwhite;
-    background: ghostwhite;
-    margin: 0;
-}
 h1{font-size: 36px;}
 h2{color: #22619c;}
 h3 {margin-left: 32px;}
 p {color:darkcyan; margin-left: 50px;}
 ul {text-align: center; list-style-position: inside; padding: 0;}
-li {text-align: center;}
-footer {text-align: center;}
+li {text-align: center; list-style: none;}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
 
-#tab {
-    text-align: center;
-    padding: 8px;
-    background-color: floralwhite;
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffffc0;
 }
-#home {
-    background-color: floralwhite;
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #22619c;
+    text-decoration: none;
 }
-#about {
-    background-color: floralwhite;
+aside {
+    float: right;
+}
+.content {
+    float: left;
+    padding: 20px;
 }
 #contact{
-    background-color: floralwhite;
     height: auto;
     padding: 20px;
     text-align: center;
@@ -40,4 +65,48 @@ footer {text-align: center;}
     text-align: center;
     display: block;
     margin: 0 auto;
+}
+
+.ad-banner {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 450px;
+    margin: 16px auto;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+div.fixed {
+    position: fixed;
+    bottom: -4px;
+    left: 0;
+    padding: 1px;
+    border: 1px solid;
+    border-color: gray;
+    border-top-right-radius: 4px;
+    background-color: #ffffffc0;
+    font-size: 11px;
+    font-family: "Times New Roman";
+}
+a.ad-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+.footer {
+    text-align: center;
+}
+@media screen and (max-width: 1100px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 18px;}
+    
 }
