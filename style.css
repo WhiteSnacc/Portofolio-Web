@@ -22,9 +22,31 @@ body {
     width: calc(100% - 128px);
     margin: 0 auto;
     border: 2px solid #22619c;
-    max-width: 600px;
+    border-style: none solid;
+    max-width: 800px;
 }
-
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 140px;
+    padding: 24px 12px;
+}
+.header h1 {
+    margin: 0;
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    color: #22619c;
+    background-image: url("assets/scene-checkers-fast-blinkie.gif");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 0 #22619c);
+}
 a {text-decoration: none; color: #22619c;}
 a:hover {
     text-decoration: dashed;
@@ -41,24 +63,9 @@ label {
     cursor: pointer;
     line-height: 1;
 }
-input [type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    float: left;
-    border: 2px solid #22619c;
-    border-radius: 50%;
-    /* outline: none; */
-    margin: 0 10px;
-}
 .flex{
     display: flex;
     justify-content: space-between;
-}
-.header {
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
 }
 nav {
     border: 2px solid #22619c;
@@ -71,15 +78,46 @@ nav ul {
     margin: 0;
     background-color: rgb(241, 241, 255);
 }
+nav ul li {
+    flex: 1;
+}
 nav ul li a {
     display: flex;
-    padding: 10px 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 12px;
     text-decoration: none;
 }
 
 .content {
     float: left;
     padding: 20px;
+}
+#skills ul {
+    padding-left: 24px;
+}
+#skills ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+#skills ul li::before,
+#skills ul li span {
+    background-image: url("assets/scene-checkers-fast-blinkie.gif");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.4px #22619c;  
+}
+#skills ul li::before {
+    content: "•";
+    font-size: 1.2em;
+}
+#aboutme h2 {
+    white-space: nowrap;
 }
 #contact{
     padding: 2em 0;
@@ -90,15 +128,14 @@ nav ul li a {
     flex-direction: column;
     gap: 8px;
     max-width: 420px;
-    margin: 0 auto;
+    margin: 0;
     text-align: left;
-}
-#contact form > br {
-    display: none;
 }
 #contact form :is(input[type="text"], input[type="email"], textarea) {
     width: 100%;
     padding: 7px;
+    border: 2px solid #22619c;
+    border-radius: 4px;
 }
 #contact form textarea {
     min-height: 80px;
@@ -107,7 +144,7 @@ nav ul li a {
 #gender {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: left;
     gap: 8px;
     margin: 4px 0;
 }
@@ -117,6 +154,15 @@ nav ul li a {
 #contact form input[type="submit"] {
     align-self: flex-start;
     padding: 8px 18px;
+    color: #22619c;
+    background-color: white;
+    border: 2px solid #22619c;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#contact form input[type="submit"]:hover {
+    color: white;
+    background: #22619c;
 }
 #projek {
     text-align: center;
@@ -170,27 +216,31 @@ a.ad-link {
     height: 100%;
 }
 .footer {
+    border-top: 1px solid #22619c;
+    padding-top: 2%;
     text-align: center;
     justify-content:center;
 }
-.digit {
-    width: 50px ;
+.footer-background {
+    display: block;
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
-#down-footer-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.down-footer-bar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin: 0;
     width: 100%;
     max-width: 100%;
     height: auto;
     overflow: hidden;
 }
-#down-footer-bar img {
+.down-footer-bar img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
     height: auto;
 }
 
@@ -204,7 +254,9 @@ a.ad-link {
         padding: 0;
     }
     nav ul li a {
-        padding: 8px 10px;
+        padding: 8px 4px;
+        font-size: 11px;
+        white-space: nowrap;
     }
     .flex {
         display: block;
@@ -234,14 +286,5 @@ a.ad-link {
     }
     .footer {
         padding: 0 8px;
-    }
-    #daily-counter {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    #daily-counter .digit {
-        width: 30px !important;
-        height: auto !important;
     }
 }

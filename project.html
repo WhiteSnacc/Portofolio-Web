@@ -5,44 +5,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Saya</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <header>
-            <center><h1>PROJEK SAYA</h1></center>
-            <nav id="tab"><center>
-                <a href="#home">Home</a>
-                <a href="portofolio.html">Portfolio</a>
-                <a href="project.html">Project</a>
-                <a href="#contact">Contact</a>
-                </center>
-            </nav>
-        </header>
-        <!-- Untuk Navigasi -->
+        <div class="container">
+            <div class="header">
+                <h1>MY PROJECTS</h1>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="portofolio.html">HOME</a></li>
+                        <li><a href="project.html">PROJECTS</a></li>
+                        <li><a href="portofolio.html#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            <div class="flex">
+                <div class="content">
+                    <section id="home">
+                        <h1>MY PROJECT(s) (mostly WIP)</h1><br>
+                        <div>
+                            <img src="projectassets/projek.webp" alt="Foto saya" width="300px">
+                        </div>
+                    </section>
+                    <section id="projects">
 
-        <main>
-            <section id="home">
-                <h3>Berikut projek yang saya kerjakan!</h3>
-                <div id="projek">
-                    <img src="assets/projek.webp" alt="Foto saya" width="250px"><br>
-                    <p>Projek pertama ku ini merupakan suatu "episode pertama"-ku sendiri, tidak cukup untuk menggambarkan apa di dalamnya hanya dengan sebuah kata-kata (kita semua seperti itu bukan?)</p>
+                    </section>
+                    <section id="contact">
+                        <h2>Message 4 Me</h2>
+                        <form>
+                            <label for="nama">Nama: </label>
+                            <input type="text" id="nama" placeholder="Masukkan nama anda.."><br>
+
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" placeholder="Masukkan email anda.."><br>
+
+                            <label for="pesan">Pesan: </label>
+                            <textarea id="pesan" placeholder="Masukkan pesan.."></textarea><br>
+
+                            <div id="gender">
+                                <input type="radio" id="cowo" value="cowo" name="gender">
+                                <label for="cowo">Laki-laki</label>
+                                <input type="radio" id="cewe" value="cewe" name="gender">
+                                <label for="cewe">Perempuan</label>
+                            </div>
+
+                            <input type="submit" value="Kirim">
+
+                        </form>
+                        <h2>Contact Me!! ^^</h2>
+                        <ul>
+                            <li><a href="https://instagram.com/real_rsyaa" target="_blank">Instagram: @real_rsyaa</a></li>
+                            <li><a href="https://github.com/WhiteSnacc" target="_blank">Github: WhiteSnacc</a></li>
+                            <li><a href="https://linkedin.com/in/albima-rasya" target="_blank">LinkedIn: Albima Rasya</a></li>
+                        </ul>
+                    </section>
                 </div>
-            </section>
 
-            <section id="contact">
-                <h2>Follow Me</h2>
-                <ul>
-                    <li>Instagram: @real.rsyaa</li>
-                    <li>Github: WhiteSnacc</li>
-                    <li>LinkedIn: Albima Rasya</li>
-                </ul>
-            </section>
-
-            <a href="https://youtube.com" target="_blank">Visit Youtube</a>
-
-            <hr>
-        </main>
-        <footer>
-            <p>&copy; 2026 Albima Rasya. All rights reserved.</p>
-        </footer>
+                <div id="right-side">
+                    <aside id="image" class="ad-banner" aria-label="Banner komunitas">
+                        <a target="_blank" class="ad-link" id="imglink" href="https://genosadness.neocities.org/" aria-label="Buka situs banner"></a>
+                        <div class="fixed">
+                            <a href="https://dogspit.nekoweb.org/sidelinkads.html" target="_blank" style="color:dimgray; text-decoration:none;white-space: pre;">SideLink</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; 2026 Albima Rasya. All rights reserved.</p>
+                <br>
+                <span class="down-footer-bar">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
+                </span>
+                <span class="down-footer-bar">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
+                    <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
+                </span>
+            </div>
     </body>
 </html>
