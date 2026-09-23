@@ -363,6 +363,17 @@ div.fixed {
     aspect-ratio: 1;
     object-fit: cover;
 }
+.heply {
+  position: fixed;
+  bottom: -7px;
+    right: 0;
+  width: 200px;
+}
+.heply img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 @media screen and (max-width: 599px) {
     .container {
         width: calc(100% - 16px);
