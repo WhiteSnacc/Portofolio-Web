@@ -375,7 +375,9 @@ div.fixed {
         padding: 0;
     }
     nav ul li a {
-        font-size: 10px;
+        padding: 8px 4px;
+        font-size: 12px;
+        font-weight: 700;
         white-space: nowrap;
     }
     .flex {
