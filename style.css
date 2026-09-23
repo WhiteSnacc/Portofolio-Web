@@ -126,6 +126,11 @@ nav ul li a {
     padding: 2em 0;
     text-align: left;
 }
+#contact ul a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
 #contact form {
     display: flex;
     flex-direction: column;
@@ -364,15 +369,48 @@ div.fixed {
     object-fit: cover;
 }
 .heply {
-  position: fixed;
-  bottom: -7px;
+    position: fixed;
     right: 0;
-  width: 200px;
+    bottom: 0;
+    z-index: 20;
+    overflow: hidden;
+    width: 200px;
+    background: transparent;
+}
+.heply-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+    padding: 2px;
+    background: transparent;
+}
+.heply-controls button {
+    width: 22px;
+    height: 20px;
+    padding: 0;
+    border: 1px solid ghostwhite;
+    color: #22619c;
+    background: ghostwhite;
+    font: bold 14px/1 Arial, sans-serif;
+    cursor: pointer;
+}
+.heply-controls button:hover {
+    color: ghostwhite;
+    background: darkturquoise;
 }
 .heply img {
     display: block;
     width: 100%;
     height: auto;
+}
+.heply.is-minimized {
+    width: auto;
+}
+.heply.is-minimized img {
+    display: none;
+}
+.heply.is-minimized .heply-controls {
+    padding: 3px;
 }
 @media screen and (max-width: 599px) {
     .container {

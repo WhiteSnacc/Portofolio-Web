@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Saya</title>
         <link rel="stylesheet" href="style.css">
+        <script src="helpy.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -110,8 +111,12 @@
                     </div>
                     <br>
                 </div>
-                <div class="heply">
-                    <img src="https://yunkinemarchive.nekoweb.org/web%20graphics/misc%20gifs/helpybycaptainvrisrezi.webp">
+                <div class="heply" data-helpy-widget>
+                    <div class="heply-controls" aria-label="Kontrol Helpy">
+                        <button type="button" data-helpy-toggle aria-label="Sembunyikan atau tampilkan Helpy">&minus;</button>
+                        <button type="button" data-helpy-close aria-label="Tutup Helpy">&times;</button>
+                    </div>
+                    <img src="https://yunkinemarchive.nekoweb.org/web%20graphics/misc%20gifs/helpybycaptainvrisrezi.webp" alt="Helpy">
                 </div>
             </div>
             <div class="footer">
