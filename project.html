@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Saya</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        <script src="gallery.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -21,12 +21,20 @@
                 </nav>
             <div class="flex">
                 <div class="content">
-                    <section id="home">
-                        <h1>MY PROJECT(s) (mostly WIP)</h1><br>
-                        <div>
-                            <img src="projectassets/projek.webp" alt="Foto saya" width="300px">
-                        </div>
+                    <section class="arts">
+                        <h1>MY ART(s) (mostly WIP)</h1>
+                        <img class="art-item" src="projectassets/projek.webp" alt="Project art">
+                        <img class="art-item" src="projectassets/myfirstdrawonnewos.jpg" alt="First drawing">
+                        <img class="art-item" src="projectassets/stickersheet.png" alt="Sticker sheet">
+                        <img class="art-item" src="projectassets/testabhuionhs611.jpg" alt="Digital art study">
+                        <img class="art-item" src="projectassets/thelove.jpg" alt="The Love">
+                        <img class="art-item" src="projectassets/trio.jpg" alt="Trio artwork">
+                        <img class="art-item" src="projectassets/trio.jpg" alt="Trio artwork">
                     </section>
+                    <div class="art-modal" id="art-modal" role="dialog" aria-modal="true" aria-label="Preview karya" hidden>
+                        <button class="art-modal-close" type="button" aria-label="Tutup preview">&times;</button>
+                        <img id="art-modal-image" src="" alt="">
+                    </div>
                     <section id="projects">
 
                     </section>
@@ -59,15 +67,6 @@
                             <li><a href="https://linkedin.com/in/albima-rasya" target="_blank">LinkedIn: Albima Rasya</a></li>
                         </ul>
                     </section>
-                </div>
-
-                <div id="right-side">
-                    <aside id="image" class="ad-banner" aria-label="Banner komunitas">
-                        <a target="_blank" class="ad-link" id="imglink" href="https://genosadness.neocities.org/" aria-label="Buka situs banner"></a>
-                        <div class="fixed">
-                            <a href="https://dogspit.nekoweb.org/sidelinkads.html" target="_blank" style="color:dimgray; text-decoration:none;white-space: pre;">SideLink</a>
-                        </div>
-                    </aside>
                 </div>
             </div>
             <div class="footer">

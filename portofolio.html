@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Saya</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -24,24 +23,25 @@
             <div class="flex">
                 <div class="content">
                     <section id="home">
-                        <h1>WELCOME !! ^u^ WELCOME!!</h1><br>
-                        <div>
-                            <img src="assets/marsey-marsey-the-cat.gif" alt="Foto saya">
+                        <div id="welcoming-pics">
+                            <h1>WELCOME !! ^u^ WELCOME!!</h1><br>
+                            <img src="assets/marsey-marsey-the-cat.gif" alt="Welcome GIF">
+                        </div>
                             <p>Selamat Datang!<br>
                                 Tidak banyak hal yang bisa dilakukan di website ini. So enjoy urself to exploring my web ^^<br>
-                                Ada tombol navigasi di atas jika kamu mager. (Gambar-gambar di samping itu aman untuk diklik. Itu hanya web indie buatan orang lain, i like their creativity so i feel the ads become aesthetic if i gave it to my website ^w^)</p>
-                        </div>
+                                Ada tombol navigasi di atas jika kamu mager. (Gambar-gambar di samping itu aman untuk diklik. Itu hanya web indie buatan orang lain, i like their creativity so i feel the ads become aesthetic if i gave it to my website ^w^)
+                            </p>
                     </section>
-
+                    <div class="line-pemisah"></div>
                     <section id="aboutme">
-                        <h2>About Me</h2>
+                        <h1>About Me</h1>
                         <p>Perkenalkan nama saya Albima Rasya, saat ini saya sedang menempuh semester 3 Program Studi S1 Ilmu Komputer. Ini website kedua yang telah kubuat sepenuh hati.<br>
                         Sekolah asal saya di SMKN 1 Medan. Saya sangat tertarik di bidang AI dan Cybersecurity, walau saya sendiri kurang berusaha di bidang tersebut (╥﹏╥)
                         </p>
                     </section>
-
+                    <div class="line-pemisah"></div>
                     <section id="skills">
-                        <h2>Skills</h2>
+                        <h1>Skills</h1>
                         <ul>
                             <li><span>HTML</span></li>
                             <li><span>CSS</span></li>
@@ -50,9 +50,9 @@
                             <li><span>Javascript (kiddng :P)</span></li>
                         </ul>
                     </section>
-
+                    <div class="line-pemisah"></div>
                     <section id="contact">
-                        <h2>Message 4 Me</h2>
+                        <h1>Message 4 Me</h1>
                         <form>
                             <label for="nama">Nama: </label>
                             <input type="text" id="nama" placeholder="Masukkan nama anda.."><br>
@@ -83,13 +83,31 @@
                 </div>
 
                 <div id="right-side">
-                    <aside id="image" class="ad-banner" aria-label="Banner komunitas">
-                        <a target="_blank" class="ad-link" id="imglink" href="https://genosadness.neocities.org/" aria-label="Buka situs banner"></a>
-                        <div class="fixed">
-                            <a href="https://dogspit.nekoweb.org/sidelinkads.html" target="_blank" style="color:dimgray; text-decoration:none;white-space: pre;">SideLink</a>
-                        </div>
+                    <aside class="sidelink" aria-label="Banner komunitas">
+                        <iframe src="https://dogspit.nekoweb.org/sidelink.html" title="SideLink banner"></iframe>
                     </aside>
                     <img class="ad-banner-image" src="https://file.garden/aFLa9SsHoBhT81zQ/windograph/ezgif.com-animated-gif-maker%20(3).gif" alt="Banner kedua">
+                    <div class="stamps-grid">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/e23.gif" alt="Rainbow cat"> <!--rainbowcat-->
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/construction.png" alt="Under construction">
+                        <img src="https://nekoweb.org/assets/buttons/button11.gif" alt="Web button"> <!-- button by milkyway.moe -->
+                        <img src="assets/hatems.gif" alt="I hate Microsoft">
+                        <img src="assets/bugs-are-friends-button.gif" alt="Bugs are friends">
+                        <img src="assets/graphicdesign.gif" alt="Graphic design is my passion">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/powered.gif" alt="Powered button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/ibispaint.jpg" alt="Ibis Paint button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/nop.gif" alt="Nope button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/a7.gif" alt="A7 button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/css.png" alt="CSS button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/beyes.gif" alt="Eyes button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/noise00.gif" alt="Noise button">
+                        <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/tumblr_fd92abe5f8af0468d42a5e209607790f_a69d5cd4_100.gif" alt="Tumblr button">
+                        <img src="assets/make-room-album-button.gif" alt="Images of eyes" title="Images from the Make Room album cover!" class="freezable">
+                        <img src="assets/free-palestine.gif" alt="Free Palestine">
+                        <img src="assets/mobile-friendly.gif" alt="Mobile friendly">
+                        <img src="assets/america-ya-button.gif" alt="America ya button" class="freezable" title="Background from the panel Chio-chan's country">
+                    </div>
+                    <br>
                 </div>
             </div>
             <div class="footer">
@@ -110,25 +128,6 @@
                     <img src="assets/free-palestine-blinkie.gif" alt="a blinkie `free palestine`">
                     <img src="assets/scene-checkers-fast-blinkie.gif" alt="a fast cycling rainbow">
                 </span>
-                <br>
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/e23.gif"> <!--rainbowcat-->
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/construction.png">
-                <img src="https://nekoweb.org/assets/buttons/button11.gif"> <!-- button by milkyway.moe -->
-                <img src="assets/hatems.gif" alt="I hate Microsoft">
-                <img src="assets/bugs-are-friends-button.gif" alt="bugs are friends" style="width:88px;height:31px">
-                <img src="assets/graphicdesign.gif" alt="Graphic design is my passion">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/powered.gif">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/ibispaint.jpg">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/nop.gif">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/a7.gif">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/css.png">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/beyes.gif">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/noise00.gif">
-                <img src="https://file.garden/aFLa9SsHoBhT81zQ/buttons/tumblr_fd92abe5f8af0468d42a5e209607790f_a69d5cd4_100.gif">
-                <img src="assets/make-room-album-button.gif" alt="images of eyes" style="width: 88px; height: 31px;" title="images from the make room album cover!" class="freezable">
-                <img src="assets/free-palestine.gif" alt="free palestine gif" style="width:88px;height:31px">
-                <img src="assets/mobile-friendly.gif" alt="Mobile friendly (mostly)" style="width:88px;height:31px">
-                <img src="assets/america-ya-button.gif" class="freezable" style="width: 88px; height: 31px;" title="backgrounf from the panel `chio-chans's country`">
                 <br>
                 <img class="footer-background" src="assets/bgfooter.webp" alt="Background footer">
                 <br>
