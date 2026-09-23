@@ -107,8 +107,16 @@ nav ul li a {
     gap: 8px;
     list-style: none;
 }
+#contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
 #skills ul li::before,
-#skills ul li span {
+#skills ul li span,
+#contact ul li::before,
+#contact ul li a {
     background-image: url("assets/scene-checkers-fast-blinkie.gif");
     background-size: cover;
     background-position: center;
@@ -119,6 +127,10 @@ nav ul li a {
     -webkit-text-stroke: 0.4px #22619c;  
 }
 #skills ul li::before {
+    content: "•";
+    font-size: 1.2em;
+}
+#contact ul li::before {
     content: "•";
     font-size: 1.2em;
 }
@@ -431,7 +443,7 @@ nav ul li a {
     }
     .flex {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(140px, 30%);
+        grid-template-columns: minmax(0, 1fr) minmax(96px, 22%);
         align-items: start;
         gap: 8px;
     }
@@ -457,7 +469,7 @@ nav ul li a {
     }
     #right-side {
         position: static;
-        width: 100%;
+        width: 96px;
         margin: 16px 0 0;
     }
     /* .ad-banner-image,
@@ -465,8 +477,15 @@ nav ul li a {
         display: none;
     } */
     .sidelink {
-        width: min(100%, 150px);
-        height: 450px;
+        width: 96px;
+        height: 288px;
+    }
+    .ad-banner-image {
+        width: 96px;
+        height: 288px;
+    }
+    .stamps-grid {
+        height: auto;
     }
     .arts {
         grid-template-columns: repeat(3, minmax(0, 1fr));
