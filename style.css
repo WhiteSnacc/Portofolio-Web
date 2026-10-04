@@ -254,7 +254,7 @@ nav ul li a {
 #copy {padding: 4vw 0 0 0;}
 .visitor-counter {
     background: transparent;
-    width: 40vw;
+    width: 90%;
     mix-blend-mode: multiply;
 }
 #stamps {
@@ -427,6 +427,7 @@ nav ul li a {
 @media screen and (max-width: 599px) {
     .container {
         margin: 0 auto;
+        width: 90vw;
     }
     #welcoming-pics h1 {font-size: large; text-align: justify;}
     h1 {font-size: large;}
